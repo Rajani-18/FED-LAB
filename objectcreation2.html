@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            creating an object using constructor function
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            let obj={
+                l:30,
+                b:30,
+                h:30,
+            display:function(){
+                console.log(obj.l);
+                console.log(obj.b);
+                console.log(obj.h);
+            },
+            volume:function(){
+                return obj.l*obj.b*obj.h;
+            },
+
+            };
+            console.log(typeof obj);
+            obj.display();
+            console.log(`Volume of Box is: ${obj.volume()}`);
+        </script>
+    </body>
+</html>
